@@ -1,0 +1,149 @@
+(venv) C:\Users\PemAk001\Desktop\marketing-agent>python main.py
+2025-05-05 08:39:26 INFO MarketingAgent │ Loading API keys from .env
+2025-05-05 08:39:28 INFO MarketingAgent │ Initialized OpenAI and Gemini clients
+2025-05-05 08:39:28 INFO MarketingAgent │ Ensured output_images/ and output_videos/ exist
+2025-05-05 08:39:28 INFO MarketingAgent │ Binding tools to LLM
+2025-05-05 08:39:28 INFO MarketingAgent │ Building StateGraph
+2025-05-05 08:39:29 INFO MarketingAgent │ Agent compiled successfully
+Type 'exit' or 'quit' to stop.
+
+Your prompt: Generate an image of this product—add a small first-week discount sticker in the corner saying 25 only!
+2025-05-05 08:39:34 INFO MarketingAgent │ LLM node: sending 2 messages to LLM
+2025-05-05 08:39:38 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-05 08:39:39 INFO MarketingAgent │ LLM node: received response with 1 tool_calls
+2025-05-05 08:39:39 INFO MarketingAgent │ should_continue: last message had tool_calls=True
+2025-05-05 08:39:39 INFO MarketingAgent │ Action node: Processing only first tool call: gen_image
+2025-05-05 08:39:39 INFO MarketingAgent │ gen_image: reading led.jpeg
+2025-05-05 08:40:22 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/images/edits "HTTP/1.1 200 OK"
+2025-05-05 08:40:22 INFO MarketingAgent │ gen_image: decoded image (1214686 bytes)
+2025-05-05 08:40:22 INFO MarketingAgent │ Action node: saving gen_image → output_images\gen_image_out.jpg
+2025-05-05 08:39:28 INFO MarketingAgent │ Initialized OpenAI and Gemini clients
+2025-05-05 08:39:28 INFO MarketingAgent │ Ensured output_images/ and output_videos/ exist
+2025-05-05 08:39:28 INFO MarketingAgent │ Binding tools to LLM
+2025-05-05 08:39:28 INFO MarketingAgent │ Building StateGraph
+2025-05-05 08:39:29 INFO MarketingAgent │ Agent compiled successfully
+Type 'exit' or 'quit' to stop.
+
+Your prompt: Generate an image of this product—add a small first-week discount sticker in the corner saying 25 only!
+2025-05-05 08:39:34 INFO MarketingAgent │ LLM node: sending 2 messages to LLM
+2025-05-05 08:39:38 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-05 08:39:39 INFO MarketingAgent │ LLM node: received response with 1 tool_calls
+2025-05-05 08:39:39 INFO MarketingAgent │ should_continue: last message had tool_calls=True
+2025-05-05 08:39:39 INFO MarketingAgent │ Action node: Processing only first tool call: gen_image
+2025-05-05 08:39:39 INFO MarketingAgent │ gen_image: reading led.jpeg
+2025-05-05 08:40:22 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/images/edits "HTTP/1.1 200 OK"
+2025-05-05 08:40:22 INFO MarketingAgent │ gen_image: decoded image (1214686 bytes)
+2025-05-05 08:40:22 INFO MarketingAgent │ Action node: saving gen_image → output_images\gen_image_out.jpg
+2025-05-05 08:40:22 INFO MarketingAgent │ LLM node: sending 4 messages to LLM
+2025-05-05 08:40:22 INFO MarketingAgent │ LLM node: sending 4 messages to LLM
+2025-05-05 08:40:28 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-05 08:40:28 INFO MarketingAgent │ LLM node: received response with 0 tool_calls
+2025-05-05 08:40:28 INFO MarketingAgent │ should_continue: last message had tool_calls=False
+✅ Done — check output_images/ or output_videos/
+
+Your prompt: can you generate a video on 10-second promo video showcasing this LED product with smooth zoom-inand rotation animations. Display the launch offer: 'Only $25 – First Week Launch!' 
+2025-05-05 08:41:35 INFO MarketingAgent │ LLM node: sending 6 messages to LLM
+2025-05-05 08:41:38 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-05 08:41:38 INFO MarketingAgent │ LLM node: received response with 1 tool_calls
+2025-05-05 08:41:38 INFO MarketingAgent │ should_continue: last message had tool_calls=True
+2025-05-05 08:41:38 INFO MarketingAgent │ Action node: Processing only first tool call: gen_video
+2025-05-05 08:41:38 INFO MarketingAgent │ gen_video: opening image output_images\gen_image_out.jpg
+2025-05-05 08:41:40 INFO httpx │ HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001:predictLongRunning "HTTP/1.1 200 OK"
+2025-05-05 08:41:40 INFO MarketingAgent │ gen_video: polling for operation completion
+2025-05-05 08:41:41 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:41 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:41 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:42 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:42 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:43 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:43 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:43 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:44 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:44 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:44 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:45 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:45 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:45 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:46 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:46 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:47 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:47 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:48 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:48 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:48 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:49 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:49 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:50 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:50 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:50 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:51 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:51 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:51 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:52 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:52 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:52 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:53 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:53 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:54 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:54 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:54 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:55 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:55 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:55 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:55 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:56 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:56 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:57 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:57 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:57 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:58 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:58 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:58 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:59 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:59 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:41:59 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:00 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:00 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:00 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:01 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:01 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:01 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:02 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:02 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:03 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:03 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:03 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:04 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:04 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:04 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:04 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:05 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:05 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:05 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:06 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:06 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:06 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:07 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:07 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:08 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:08 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:08 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:08 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:09 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:09 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:09 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:09 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:10 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models/veo-2.0-generate-001/operations/ajy2wmtmp1nv "HTTP/1.1 200 OK"
+2025-05-05 08:42:10 INFO MarketingAgent │ gen_video: downloading video from reference uri='https://generativelanguage.googleapis.com/v1beta/files/4s8jnqc60771:download?alt=media' video_bytes=None mime_type=None
+2025-05-05 08:42:10 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/files/4s8jnqc60771:download?alt=media "HTTP/1.1 302 Found"
+2025-05-05 08:42:10 INFO httpx │ HTTP Request: GET https://generativelanguage.googleapis.com/download/v1beta/files/4s8jnqc60771:download?alt=media "HTTP/1.1 200 OK"
+2025-05-05 08:42:15 INFO MarketingAgent │ gen_video: downloaded video (2733653 bytes)
+2025-05-05 08:42:15 INFO MarketingAgent │ Action node: saving gen_video → output_videos\gen_video_out.mp4
+2025-05-05 08:42:15 INFO MarketingAgent │ LLM node: sending 8 messages to LLM
+2025-05-05 08:42:17 INFO httpx │ HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-05-05 08:42:17 INFO MarketingAgent │ LLM node: received response with 0 tool_calls
+2025-05-05 08:42:17 INFO MarketingAgent │ should_continue: last message had tool_calls=False
+✅ Done — check output_images/ or output_videos/
+
+Your prompt: exit
+Goodbye!
