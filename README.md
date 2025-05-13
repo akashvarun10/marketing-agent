@@ -30,7 +30,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 1. Start the MLflow server in a separate terminal:
 ```bash
-mlflow server --host 0.0.0.0 --port 5050
+uv run mlflow server --host 0.0.0.0 --port 5050
 ```
 
 2. Run the application:
