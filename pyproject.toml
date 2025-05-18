@@ -3,12 +3,18 @@ name = "ai-marketing-agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10,<4.0"
 dependencies = [
+    "fastmcp>=2.3.4",
     "google-genai>=1.14.0",
+    "ipython>=8.36.0",
+    "langchain-mcp-adapters>=0.1.0",
     "langchain-openai>=0.3.16",
     "langgraph>=0.4.3",
+    "langgraph-cli[inmem]>=0.2.10",
+    "mcp[cli]",
     "mlflow>=2.22.0",
+    "notebook>=7.4.2",
     "openai>=1.78.1",
     "pillow>=11.2.1",
     "python-dotenv>=1.1.0",
