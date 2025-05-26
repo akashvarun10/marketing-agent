@@ -47,12 +47,12 @@ async def initialize_mcp_client():
     server_config = {
         "image_generation": {
             "command": "python",
-            "args": [os.path.abspath("image_server.py")],  # Use absolute path
+            "args": [os.path.abspath("image_server.py")], 
             "transport": "stdio",
         },
         "video_generation": {
             "command": "python", 
-            "args": [os.path.abspath("video_server.py")],  # Use absolute path
+            "args": [os.path.abspath("video_server.py")],
             "transport": "stdio",
         }
     }
@@ -195,7 +195,6 @@ async def action_node(state: State):
                 tool_args['image_path'] = state['image_path']
                 logger.info(f"Added image_path to tool args: {tool_args}")
             
-            # Call the tool directly (it's already a LangChain tool)
             if tool_name in tools_by_name:
                 tool = tools_by_name[tool_name]
                 logger.info(f"Invoking tool: {tool_name}")
